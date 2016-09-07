@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="fr.alick.counter.MainActivity" >
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:text="Connection Status:"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_height="match_parent"/>
+        <TextView android:id="@+id/connect_status"
+            android:text="--"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/up"
+        android:text="@string/up"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="#457bb5"
+        android:shadowColor="#A8A8A8"
+        android:onClick="onClickUp"
+        android:layout_above="@+id/down"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/down"
+        android:text="@string/down"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:onClick="onClickDown"
+        android:layout_above="@+id/reset"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/up" />
+
+    <Button
+        android:id="@+id/reset"
+        android:text="@string/reset"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="#03c703"
+        android:shadowColor="#A8A8A8"
+        android:onClick="onClickReset"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/down" />
+
+</RelativeLayout>
