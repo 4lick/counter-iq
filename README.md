@@ -4,7 +4,8 @@
 
 ```go
 > openssl genrsa -out developer_key.pem 4096
-> openssl pkcs8 -topk8 -inform PEM -outform DER -in key.pem -out key.der -nocrypt```
+> openssl pkcs8 -topk8 -inform PEM -outform DER -in key.pem -out key.der -nocrypt
+```
 
 ### Launch Android Emulator
 ```go
