@@ -13,6 +13,7 @@
 ```
 
 ### Install Garmin Connect Mobile
+[Garmin Connect Mobile apk file](https://apkpure.com/garmin-connect%E2%84%A2-mobile/com.garmin.android.apps.connectmobile)
 ```go
 > adb install Garmin\ Connect™\ Mobile_v3.8.0.1_apkpure.com.apk
 ```
